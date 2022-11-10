@@ -23,6 +23,7 @@ async function main() {
   console.log(`Deployed Real Estate Contract at: ${realEstate.address}`)
   console.log(`Minting 3 properties...\n`)
 
+  // Add 3 NFT's using this 
   for (let i = 0; i < 3; i++) {
     const transaction = await realEstate.connect(seller).mint(`https://ipfs.io/ipfs/QmX2dSzF4gySyXKHyLhJ8fccXZCcpkPZaKXvxjcaP2T5dW/${i + 1}.json`)
     await transaction.wait()
