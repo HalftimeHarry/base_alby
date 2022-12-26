@@ -1,0 +1,33 @@
+{
+    "name": "Alamo Disc Golf",
+    "area": "San Antonio, where the Alamo is located, is in the south-central part of Texas.",
+    "colors": "White, red, and green",
+    "image": "https://dulligans.mypinata.cloud/ipfs/QmS3ZYn9mj3291gEYYSJLmgHCVxr1bFU9Paxix9JRYYfW6",
+    "id": "1",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 20
+        },
+        {
+            "trait_type": "Mascot Logo",
+            "value": "Alamo Cowboy"
+        },
+        {
+            "trait_type": "Holes",
+            "value": 19
+        },
+        {
+            "trait_type": "Plot",
+            "value": 1
+        },
+        {
+            "trait_type": "Acres",
+            "value": 118.62
+        },
+        {
+            "trait_type": "Year Built to set defalted to: 2023",
+            "value": 2023
+        }
+    ]
+}

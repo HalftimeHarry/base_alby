@@ -24,22 +24,32 @@ function App() {
   const [toggle, setToggle] = useState(false);
 
   const loadBlockchainData = async () => {
+    if (!window.ethereum) {
+        console.error('No Ethereum provider found.');
+        return;
+      }
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     setProvider(provider)
     const network = await provider.getNetwork()
-
+    
+   
     const realEstate = new ethers.Contract(config[network.chainId].realEstate.address, RealEstate, provider)
     const totalSupply = await realEstate.totalSupply()
+    console.log(totalSupply.toString())
     const homes = []
+    
 
-    for (var i = 1; i <= totalSupply; i++) {
+    for (var i = 1; i < totalSupply; i++) {
       const uri = await realEstate.tokenURI(i)
+      console.log(uri)
       const response = await fetch(uri)
-      const metadata = await response.json()
-      homes.push(metadata)
+      const metafran = await response.json()
+      homes.push(metafran)
     }
 
     setHomes(homes)
+
+
 
     const escrow = new ethers.Contract(config[network.chainId].escrow.address, Escrow, provider)
     setEscrow(escrow)

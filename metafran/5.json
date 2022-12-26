@@ -1,0 +1,33 @@
+{
+    "name": "Eagles Nest Disc Golf",
+    "area": "It is not clear where this organization is located within Texas",
+    "colors": "Blue, white, and yellow",
+    "image": "https://dulligans.mypinata.cloud/ipfs/QmVxELnNXrPwyQoqYtCnNGt7tz33teLQEKjMz48HQSbYcb",
+    "id": "5",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 20
+        },
+        {
+            "trait_type": "Mascot Logo",
+            "value": "Eagle"
+        },
+        {
+            "trait_type": "Holes",
+            "value": 19
+        },
+        {
+            "trait_type": "Plot",
+            "value": 1
+        },
+        {
+            "trait_type": "Acres",
+            "value": 118.62
+        },
+        {
+            "trait_type": "Year Built to set defalted to: 2023",
+            "value": 2023
+        }
+    ]
+}

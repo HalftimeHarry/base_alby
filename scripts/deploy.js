@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // We require the Hardhat Runtime Environment explicitly here. This is optional
 // but useful for running the script in a standalone fashion through `node <script>`.
 //
@@ -21,13 +22,13 @@ async function main() {
   await realEstate.deployed()
 
   console.log(`Deployed Real Estate Contract at: ${realEstate.address}`)
-  console.log(`Minting 3 properties...\n`)
+  console.log(`Minting 12 properties...\n`)
 
-  // Add 3 NFT's using this 
-  for (let i = 0; i < 3; i++) {
-    const transaction = await realEstate.connect(seller).mint(`https://ipfs.io/ipfs/QmX2dSzF4gySyXKHyLhJ8fccXZCcpkPZaKXvxjcaP2T5dW/${i + 1}.json`)
-    await transaction.wait()
-  }
+  // Add 12 NFT's using this 
+  for (let i = 0; i < 12; i++) {
+  const transaction = await realEstate.connect(seller).mint(`https://dulligans.mypinata.cloud/ipfs/QmU1njj6TjUvK2kf4yUf31vcfMY8ouRUKHrbA2sUgusctc/${i + 1}.json`)
+  await transaction.wait()
+}
 
   // Deploy Escrow
   const Escrow = await ethers.getContractFactory('Escrow')
@@ -40,9 +41,9 @@ async function main() {
   await escrow.deployed()
 
   console.log(`Deployed Escrow Contract at: ${escrow.address}`)
-  console.log(`Listing 3 properties...\n`)
+  console.log(`Listing 12 properties...\n`)
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 12; i++) {
     // Approve properties...
     let transaction = await realEstate.connect(seller).approve(escrow.address, i + 1)
     await transaction.wait()
@@ -51,12 +52,51 @@ async function main() {
   // Listing properties...
   transaction = await escrow.connect(seller).list(1, buyer.address, tokens(20), tokens(10))
   await transaction.wait()
+  console.log('mint 1')
 
-  transaction = await escrow.connect(seller).list(2, buyer.address, tokens(15), tokens(5))
+  transaction = await escrow.connect(seller).list(2, buyer.address, tokens(20), tokens(10))
   await transaction.wait()
+  console.log('mint 2')
 
-  transaction = await escrow.connect(seller).list(3, buyer.address, tokens(10), tokens(5))
+  transaction = await escrow.connect(seller).list(3, buyer.address, tokens(20), tokens(10))
   await transaction.wait()
+  console.log('mint 3')
+
+  transaction = await escrow.connect(seller).list(4, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 4')
+
+  transaction = await escrow.connect(seller).list(5, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 5')
+
+  transaction = await escrow.connect(seller).list(6, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 6')
+
+  transaction = await escrow.connect(seller).list(7, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 7')
+
+  transaction = await escrow.connect(seller).list(8, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 8')
+
+  transaction = await escrow.connect(seller).list(9, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 9')
+
+  transaction = await escrow.connect(seller).list(10, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 10')
+
+  transaction = await escrow.connect(seller).list(11, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 11')
+
+  transaction = await escrow.connect(seller).list(12, buyer.address, tokens(20), tokens(10))
+  await transaction.wait()
+  console.log('mint 12')
 
   console.log(`Finished.`)
 }

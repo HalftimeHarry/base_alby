@@ -18,8 +18,8 @@ describe('Escrow', () => {
         realEstate = await RealEstate.deploy()
 
         // Mint 
-        // try to create 3 NFT's
-        let transaction = await realEstate.connect(seller).mint("https://ipfs.io/ipfs/QmWMqw8u2DXYjXEYe5mvmvYnQFdT7A4aXCzvXr2YPBm2df")
+        // try to create 12 NFT's
+        let transaction = await realEstate.connect(seller).mint("https://dulligans.mypinata.cloud/ipfs/QmU1njj6TjUvK2kf4yUf31vcfMY8ouRUKHrbA2sUgusctc")
         await transaction.wait()
 
         // Deploy Escrow

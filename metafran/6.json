@@ -1,0 +1,33 @@
+{
+    "name": "Hill Country Disc Golf",
+    "area": "The Hill Country region of Texas is located in the central part of the state and is known for its rolling hills, scenic valleys, and small towns.",
+    "colors": "Green, brown, and orange",
+    "image": "https://dulligans.mypinata.cloud/ipfs/QmSD8GGKtLarzgDtAMJVEXaWYBTcnCYyKfLb9hgPgfKmC9",
+    "id": "6",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 20
+        },
+        {
+            "trait_type": "Mascot Logo",
+            "value": "Rocking horse"
+        },
+        {
+            "trait_type": "Holes",
+            "value": 19
+        },
+        {
+            "trait_type": "Plot",
+            "value": 1
+        },
+        {
+            "trait_type": "Acres",
+            "value": 118.62
+        },
+        {
+            "trait_type": "Year Built to set defalted to: 2023",
+            "value": 2023
+        }
+    ]
+}

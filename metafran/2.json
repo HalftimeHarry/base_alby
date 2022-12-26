@@ -1,0 +1,33 @@
+{
+    "name": "Austin Disc Golf",
+    "area": "Austin is the capital city of Texas and is located in the central part of the state.",
+    "colors": "White, red, and green",
+    "image": "hhttps://dulligans.mypinata.cloud/ipfs/QmZe9CEdpvREZrCG8Qat6XLKW2fuBcMABk1HbWYMWqz6Z7",
+    "id": "2",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 20
+        },
+        {
+            "trait_type": "Mascot Logo",
+            "value": "Armadillo"
+        },
+        {
+            "trait_type": "Holes",
+            "value": 19
+        },
+        {
+            "trait_type": "Plot",
+            "value": 1
+        },
+        {
+            "trait_type": "Acres",
+            "value": 118.62
+        },
+        {
+            "trait_type": "Year Built to set defalted to: 2023",
+            "value": 2023
+        }
+    ]
+}

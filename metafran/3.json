@@ -1,0 +1,33 @@
+{
+    "name": "Big Thicket Disc Golf",
+    "area": "The Big Thicket region of Texas is located in the eastern part of the state and is known for its dense forests and diverse plant and animal life.",
+    "colors": "Green, brown, and black",
+    "image": "https://dulligans.mypinata.cloud/ipfs/QmZgrmLX1xrbyKE6YYV7izsodmP9XYrxWLB9uUMofnuDRv",
+    "id": "3",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 20
+        },
+        {
+            "trait_type": "Mascot Logo",
+            "value": "Bigfoot"
+        },
+        {
+            "trait_type": "Holes",
+            "value": 19
+        },
+        {
+            "trait_type": "Plot",
+            "value": 1
+        },
+        {
+            "trait_type": "Acres",
+            "value": 118.62
+        },
+        {
+            "trait_type": "Year Built to set defalted to: 2023",
+            "value": 2023
+        }
+    ]
+}

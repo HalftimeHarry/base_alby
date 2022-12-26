@@ -1,0 +1,33 @@
+{
+    "name": "Dallas Disc Golf",
+    "area": "Dallas is located in the north-central part of Texas.",
+    "colors": "Red, white, and blue",
+    "image": "https://dulligans.mypinata.cloud/ipfs/QmX6KRBWdeuWSeELLvek9RRDnkxtUdiDiEm2uSX2pXP9Wj/1.json",
+    "id": "4",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 20
+        },
+        {
+            "trait_type": "Mascot Logo",
+            "value": "Cowboy"
+        },
+        {
+            "trait_type": "Holes",
+            "value": 19
+        },
+        {
+            "trait_type": "Plot",
+            "value": 1
+        },
+        {
+            "trait_type": "Acres",
+            "value": 118.62
+        },
+        {
+            "trait_type": "Year Built to set defalted to: 2023",
+            "value": 2023
+        }
+    ]
+}
