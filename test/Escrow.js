@@ -19,7 +19,7 @@ describe('Escrow', () => {
 
         // Mint 
         // try to create 12 NFT's
-        let transaction = await realEstate.connect(seller).mint("https://dulligans.mypinata.cloud/ipfs/QmU1njj6TjUvK2kf4yUf31vcfMY8ouRUKHrbA2sUgusctc")
+        let transaction = await realEstate.connect(seller).mint("https://dulligans.mypinata.cloud/ipfs/QmZBa6eGpSN9STrNUg67fHtW7N9jq86eKvzxk6i7sTotD8")
         await transaction.wait()
 
         // Deploy Escrow

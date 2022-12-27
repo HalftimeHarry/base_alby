@@ -35,13 +35,12 @@ function App() {
    
     const realEstate = new ethers.Contract(config[network.chainId].realEstate.address, RealEstate, provider)
     const totalSupply = await realEstate.totalSupply()
-    console.log(totalSupply.toString())
     const homes = []
+    console.log(homes)
     
 
-    for (var i = 1; i < totalSupply; i++) {
+    for (var i = 1; i <= totalSupply; i++) {
       const uri = await realEstate.tokenURI(i)
-      console.log(uri)
       const response = await fetch(uri)
       const metafran = await response.json()
       homes.push(metafran)
@@ -77,7 +76,7 @@ function App() {
 
       <div className='cards__section'>
 
-        <h3>Potential Sites</h3>
+        <h3>Potential Franchises</h3>
 
         <hr />
 
@@ -85,7 +84,7 @@ function App() {
           {homes.map((home, index) => (
             <div className='card' key={index} onClick={() => togglePop(home)}>
               <div className='card__image'>
-                <img src={home.image} alt="Home" />
+                <img src={home.image} alt="Home" width="250" height="150"/>
               </div>
               <div className='card__info'>
                 <h4>{home.attributes[0].value} ETH</h4>

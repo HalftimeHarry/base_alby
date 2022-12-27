@@ -26,7 +26,7 @@ async function main() {
 
   // Add 12 NFT's using this 
   for (let i = 0; i < 12; i++) {
-  const transaction = await realEstate.connect(seller).mint(`https://dulligans.mypinata.cloud/ipfs/QmU1njj6TjUvK2kf4yUf31vcfMY8ouRUKHrbA2sUgusctc/${i + 1}.json`)
+  const transaction = await realEstate.connect(seller).mint(`https://dulligans.mypinata.cloud/ipfs/QmZBa6eGpSN9STrNUg67fHtW7N9jq86eKvzxk6i7sTotD8/${i + 1}.json`)
   await transaction.wait()
 }
 
